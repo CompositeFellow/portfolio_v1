@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Nav from "../components/global/Nav";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <aside>left</aside>
 
       <main className={styles.main}>
-        <nav className={styles.nav}>Hi, I'm Trevor Danahy</nav>
+        <Nav />
         <h1>I'm Awesome</h1>
         <footer className={styles.footer}>
           <p>Some stuff here</p>
