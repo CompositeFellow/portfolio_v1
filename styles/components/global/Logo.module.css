@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  direction: column;
+  min-width: 80px;
+  font-size: 56px;
+}
+
+.colorText {
+  color: rgb(241, 134, 53);
+}
