@@ -20,9 +20,11 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <Logo />
-      <NavLink href="/#projects" name="Projects" />
-      <NavLink href="/#experience" name="Experience" />
-      <NavLink href="/#about" name="About" />
+      <div>
+        <NavLink href="/#projects" name="Projects" />
+        <NavLink href="/#experience" name="Experience" />
+        <NavLink href="/#about" name="About" />
+      </div>
     </nav>
   );
 };

@@ -7,9 +7,9 @@ type Props = {};
 const Logo = (props: Props) => {
   return (
     <div className={styles.logo}>
-      <p>. .</p>
       {/* char code for bracket */}
-      <p className={styles.colorText}>&#125;</p>
+      <p className={styles.colorText}>&#123;</p>
+      <p>-:</p>
     </div>
   );
 };
