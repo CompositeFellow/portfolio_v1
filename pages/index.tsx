@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Nav from "../components/global/Nav";
+import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,10 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Nav />
-        <h1>I'm Awesome</h1>
-        <footer className={styles.footer}>
-          <p>Some stuff here</p>
-        </footer>
+        <Hero />
       </main>
       <aside>right</aside>
     </div>

@@ -1,9 +1,8 @@
 .nav {
-  min-height: 100px;
+  max-height: 64px;
   min-width: 100%;
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -14,5 +13,5 @@
 
 .link:hover {
   border-bottom: solid 4px;
-  border-color: rgb(241, 134, 53);
+  border-color: var(--orangBright);
 }

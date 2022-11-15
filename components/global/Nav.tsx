@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "../../styles/components/global/Nav.module.css";
+import Logo from "./Logo";
 
 type NavLinkProps = {
   name: string;
@@ -18,9 +19,12 @@ const NavLink = ({ name, href }: NavLinkProps) => {
 const Nav = () => {
   return (
     <nav className={styles.nav}>
-      <NavLink href="/#projects" name="Projects" />
-      <NavLink href="/#experience" name="Experience" />
-      <NavLink href="/#about" name="About" />
+      <Logo />
+      <div>
+        <NavLink href="/#projects" name="Projects" />
+        <NavLink href="/#experience" name="Experience" />
+        <NavLink href="/#about" name="About" />
+      </div>
     </nav>
   );
 };
