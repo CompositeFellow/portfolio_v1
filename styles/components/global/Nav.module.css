@@ -13,5 +13,5 @@
 
 .link:hover {
   border-bottom: solid 4px;
-  border-color: rgb(241, 134, 53);
+  border-color: var(--orangBright);
 }

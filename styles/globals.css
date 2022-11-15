@@ -1,3 +1,9 @@
+:root {
+  --orangBright: #f18635;
+  --orangDark: #b96829;
+  --orangTransparent: #ff8f394a;
+}
+
 html,
 body {
   padding: 0;
