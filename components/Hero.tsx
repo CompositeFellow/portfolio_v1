@@ -9,7 +9,7 @@ type Props = {};
 const skillsList = skills.map((skill) => {
   console.log(skill.logo);
   return (
-    <div className={styles.langRow}>
+    <div className={styles.langRow} key={skill.altTxt}>
       <Image
         src={skill.logo}
         alt={skill.altTxt}
@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
         <div className={styles.skillList}>{skillsList}</div>
       </div>
       <div className={styles.intro}>
-        <h1>Hi, I'm Trevor Danahy</h1>
+        <h1>Hi, I&apos;m Trevor Danahy</h1>
         <h2>Fullstack Developer</h2>
         <h3>Check out some of my projects</h3>
       </div>
