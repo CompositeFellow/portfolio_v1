@@ -1,59 +1,37 @@
+import Image from "next/image";
 import React from "react";
 import styles from "../styles/components/Hero.module.css";
+import { skills } from "./constants/skills";
+import profilePic from "../public/assets/profilePic.jpg";
 
 type Props = {};
+
+const skillsList = skills.map((skill) => {
+  console.log(skill.logo);
+  return (
+    <div className={styles.langRow}>
+      <Image
+        src={skill.logo}
+        alt={skill.altTxt}
+        className={styles.langLogo}
+        width={40}
+        height={40}
+      />
+      {skill.skill}
+    </div>
+  );
+});
 
 const Hero = (props: Props) => {
   return (
     <section className={styles.hero}>
       <div className={styles.profile}>
-        <img
-          src="./assets/profilePic.jpg"
+        <Image
+          src={profilePic}
           alt="Red Bearded Beautiful Dev"
           className={styles.profilePic}
         />
-        <div className={styles.langList}>
-          <div className={styles.langRow}>
-            <img
-              src="./assets/langLogos/tsLogo.png"
-              alt="Typescript Logo"
-              className={styles.langLogo}
-            />
-            Typescript
-          </div>
-          <div className={styles.langRow}>
-            <img
-              src="./assets/langLogos/jsLogo.png"
-              alt="Javascript Logo"
-              className={styles.langLogo}
-            />
-            Javascript
-          </div>
-          <div className={styles.langRow}>
-            <img
-              src="./assets/langLogos/pythonLogo.png"
-              alt="Python Logo"
-              className={styles.langLogo}
-            />
-            Python
-          </div>
-          <div className={styles.langRow}>
-            <img
-              src="./assets/langLogos/reactLogo.png"
-              alt="React Logo"
-              className={styles.langLogo}
-            />
-            React
-          </div>
-          <div className={styles.langRow}>
-            <img
-              src="./assets/langLogos/nextLogo.png"
-              alt="NextJS Logo"
-              className={styles.langLogo}
-            />
-            Next.JS
-          </div>
-        </div>
+        <div className={styles.skillList}>{skillsList}</div>
       </div>
       <div className={styles.intro}>
         <h1>Hi, I'm Trevor Danahy</h1>
