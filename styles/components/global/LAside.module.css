@@ -1,0 +1,23 @@
+.lAside {
+  width: 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 16px;
+}
+
+.topLine {
+  min-width: 2px;
+  max-width: 2px;
+  min-height: 192px;
+  max-height: 192px;
+  background-color: var(--orangTransparent);
+  margin-bottom: 16px;
+}
+
+.topLine:hover {
+  background-color: var(--orangBright);
+}
