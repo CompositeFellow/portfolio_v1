@@ -6,8 +6,8 @@ type Props = {};
 
 const LeftAside = (props: Props) => {
   return (
-    <aside className={styles.aside}>
-      <div className={styles.leadingLine} />
+    <aside className={styles.lAside}>
+      <div className={styles.topLine} />
       <div>
         <a href="https://github.com/CompositeFellow">
           <Image

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import LeftAside from "../components/global/LeftAside";
 import Nav from "../components/global/Nav";
+import RightAside from "../components/global/RightAside";
 import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 
@@ -20,7 +21,7 @@ export default function Home() {
         <Hero />
         <Hero />
       </main>
-      <aside>right</aside>
+      <RightAside />
     </div>
   );
 }
