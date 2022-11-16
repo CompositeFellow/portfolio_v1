@@ -46,7 +46,7 @@
   justify-content: space-between;
 }
 
-.langRow {
+.skillRow {
   display: flex;
   flex-direction: row;
   max-height: 40px;
@@ -55,13 +55,13 @@
   text-align: right;
 }
 
-.langLogo {
+.skillIcon {
   height: 40px;
   width: auto;
   margin-right: 16px;
 }
 
-.lang {
+.skill {
   justify-self: flex-end;
 }
 

@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/components/Hero.module.css";
-import { skills } from "./constants/skills";
+import { skills, skillsArray } from "./constants/skills";
 import profilePic from "../public/assets/profilePic.jpg";
 
 type Props = {};
 
-const skillsList = skills.map((skill) => {
-  console.log(skill.logo);
+const skillsList = skillsArray.map((skill) => {
+  console.log(skill.iconPath);
   return (
-    <div className={styles.langRow} key={skill.altTxt}>
+    <div className={styles.skillRow} key={skill.altTxt}>
       <Image
-        src={skill.logo}
+        src={skill.iconPath}
         alt={skill.altTxt}
-        className={styles.langLogo}
+        className={styles.skillIcon}
         width={40}
         height={40}
       />
@@ -23,6 +23,7 @@ const skillsList = skills.map((skill) => {
 });
 
 const Hero = (props: Props) => {
+  console.log(skillsArray);
   return (
     <section className={styles.hero}>
       <div className={styles.profile}>
