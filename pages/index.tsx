@@ -3,6 +3,7 @@ import LeftAside from "../components/global/LeftAside";
 import Nav from "../components/global/Nav";
 import RightAside from "../components/global/RightAside";
 import Hero from "../components/Hero";
+import ProjectList from "../components/projects/ProjectList";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -17,9 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <Nav />
         <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
+        <ProjectList />
       </main>
       <RightAside />
     </div>
