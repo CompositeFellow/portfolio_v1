@@ -1,10 +1,10 @@
-type skill = {
+export type skill = {
   iconPath: string;
   altTxt: string;
   skill: string;
 };
 
-const assetStr = "/assets/langLogos/";
+const assetStr = "/assets/skillIcons/";
 
 export const skills: { [skillName: string]: skill } = {
   typescript: {

@@ -7,7 +7,6 @@ import profilePic from "../public/assets/profilePic.jpg";
 type Props = {};
 
 const skillsList = skillsArray.map((skill) => {
-  console.log(skill.iconPath);
   return (
     <div className={styles.skillRow} key={skill.altTxt}>
       <Image
@@ -23,7 +22,6 @@ const skillsList = skillsArray.map((skill) => {
 });
 
 const Hero = (props: Props) => {
-  console.log(skillsArray);
   return (
     <section className={styles.hero}>
       <div className={styles.profile}>
