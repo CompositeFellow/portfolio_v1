@@ -5,8 +5,6 @@ import Image from "next/image";
 import ProjectLinks from "./ProjectLinks";
 
 const Project = (projectData: Project) => {
-  console.log(projectData.skillsUsed);
-
   const skills = projectData.skillsUsed.map((skill) => {
     return (
       <div className={styles.skill} key={skill.skill}>
