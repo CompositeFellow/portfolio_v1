@@ -1,26 +1,29 @@
 import Head from "next/head";
-import LeftAside from "../components/global/LeftAside";
-import Nav from "../components/global/Nav";
-import RightAside from "../components/global/RightAside";
-import Hero from "../components/Hero";
-import ProjectList from "../components/projects/ProjectList";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/global/Layout";
+import LinkAside from "../components/global/LinkAside";
+import MainColumn from "../components/global/MainColumn";
+import SectionMainColumn from "../components/global/SectionMainColumn";
+import Hero from "../components/hero/Hero";
+import Navbar from "../components/navbar/Navbar";
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="w-[100vw] h-full min-h-screen bg-black">
       <Head>
         <title>Trevor Danahy</title>
-        <meta name="description" content="portfolio" />
+        <meta name="Trevor's Dev Portfolio" content="Dev Projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <LeftAside />
-      <main className={styles.main}>
-        <Nav />
-        <Hero />
-        <ProjectList />
-      </main>
-      <RightAside />
+      <Layout>
+        <Navbar/>
+        <LinkAside rightside={true}/>
+        <MainColumn>
+          <Hero height={20}/>
+
+        </MainColumn>
+        <LinkAside rightside={false}/>
+      </Layout>
     </div>
   );
 }
