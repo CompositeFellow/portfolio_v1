@@ -4,7 +4,7 @@ import LinkAside from "../components/global/LinkAside";
 import MainColumn from "../components/global/MainColumn";
 import SectionMainColumn from "../components/global/SectionMainColumn";
 import Hero from "../components/hero/Hero";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/navbar";
 
 
 export default function Home() {
