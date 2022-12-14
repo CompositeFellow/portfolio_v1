@@ -28,9 +28,9 @@ const Hero = ({children, height}: HeroProps) => {
 
         </div>
         <div className='w-[29rem] h-full ml-[1rem] flex flex-col items-end'>
-          <h1 className='text-orangeDark text-[2rem]'>Hi, I&apos;m Trevor Danahy</h1>
-          <h2 className='text-orangeDark text-[1.5rem]'>Fullstack Developer</h2>
-          <h3 className='text-orangeDark text-[1rem]'>Here is some of my work</h3>
+          <h1 className='text-white text-[2rem]'>Hi, I&apos;m Trevor Danahy</h1>
+          <h2 className='text-white text-[1.5rem]'>Fullstack Developer</h2>
+          <h3 className='text-white text-[1rem]'>Here is some of my work</h3>
 
         </div>
 
