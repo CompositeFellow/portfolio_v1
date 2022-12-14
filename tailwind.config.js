@@ -18,6 +18,10 @@ module.exports = {
       'orangeDark': '#b96829',
       'orangeTransparent': '#ff8f394a',
     },
+    fontFamily:{
+      VT323: ['VT323', 'monospace'],
+      zenDots: ['Zen Dots', 'cursive'],
+    },
     extend: {
       gridTemplateColumns:{
         'mainColumns': 'repeat(auto-fill, 32px)',

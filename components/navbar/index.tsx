@@ -15,7 +15,7 @@ type NavLinkProps = {
 
 const NavLink = ({ name, href }: NavLinkProps) => {
   return (
-    <Link className='text-orangeDark text-[.5rem] sm:text-[.75rem] mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem]' href={href}>
+    <Link className='text-orangeDark text-[.5rem] font-VT323 sm:text-[1.5rem] mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem]' href={href}>
       {name}
     </Link>
   );
