@@ -11,14 +11,12 @@ const FaceLogo = (props: FaceLogoProps) => {
           <div className='flex flex-row justify-center' >
             <div className='w-[.5rem] h-[.5rem] bg-white flex justify-center items-center' >
               <div className='flex flex-col' >
-                {/* <div className='w-[.125rem] h-[.25rem] bg-white' /> */}
                 <div className='w-[.125rem] h-[.125rem] bg-black' />
               </div>
             </div>
             <div className='w-[.25rem]'/>
             <div className='w-[.5rem] h-[.5rem] bg-white flex justify-center items-center' >
               <div className='flex flex-col'>
-                {/* <div className='w-[.125rem] h-[.25rem] bg-white' /> */}
                 <div className='w-[.125rem] h-[.125rem] bg-black' />
               </div>
             </div>

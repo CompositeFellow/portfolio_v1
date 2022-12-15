@@ -51,7 +51,6 @@ module.exports = {
         'gridPaper': 'linear-gradient(to right,#5252524d 1px,transparent 1px), linear-gradient(to bottom, #5252524d 1px, transparent 1px)',
         'gridHorizontal': 'linear-gradient(to bottom, #5252524d 1px, transparent 1px)',
         'fadedOrange': 'linear-gradient(135deg, black, #ff8f394a)', 
-        'profilePic': 'linear-gradient(135deg, rgba(0, 0, 0, 1) 5%, transparent 90%), url(../public/assets/me.png)'
       },
       backgroundSize: {
         'gridSize': '32px 32px',
