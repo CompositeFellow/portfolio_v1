@@ -19,8 +19,7 @@ export default function Home() {
         <Navbar/>
         <LinkAside rightside={true}/>
         <MainColumn>
-          <Hero height={20}/>
-
+          <Hero height={1}/>
         </MainColumn>
         <LinkAside rightside={false}/>
       </Layout>

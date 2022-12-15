@@ -32,6 +32,11 @@ export type skill = {
       altTxt: "NextJS Logo",
       skill: "Next.JS",
     },
+    postgres:{
+      iconPath: assetStr + "postgresLogo.png",
+      altTxt: "PostgreSQL Logo",
+      skill: "PostgreSQL"
+    }
   };
   
   const ObjOfObjsToArray = (obj: {}) => {
