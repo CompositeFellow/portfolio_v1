@@ -1,7 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
+import LAside from "../components/global/LAside";
 import Layout from "../components/global/Layout";
 import LinkAside from "../components/global/LinkAside";
 import MainColumn from "../components/global/MainColumn";
+import RAsiade from "../components/global/RAsiade";
 import SectionMainColumn from "../components/global/SectionMainColumn";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar";
@@ -17,11 +20,11 @@ export default function Home() {
       </Head>
       <Layout>
         <Navbar/>
-        <LinkAside rightside={true}/>
+        <LAside />
         <MainColumn>
           <Hero height={1}/>
         </MainColumn>
-        <LinkAside rightside={false}/>
+        <RAsiade />
       </Layout>
     </div>
   );
