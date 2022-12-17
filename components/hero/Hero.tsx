@@ -5,7 +5,6 @@ import SectionMainColumn from '../global/SectionMainColumn'
 
 type HeroProps = {
     children?: React.ReactNode
-    height: number
 }
 
 const skillsList = skillsArray.map((skill) => {
@@ -17,15 +16,15 @@ const skillsList = skillsArray.map((skill) => {
   )
 })
 
-const Hero = ({children, height}: HeroProps) => {
+const Hero = ({children}: HeroProps) => {
   return (
-    <SectionMainColumn height={height} id={'hero'} classname='flex flex-row flex-wrap mt-[1rem] xl:mt-[2rem]  justify-center'>
+    <SectionMainColumn  id={'hero'} classname='flex flex-row flex-wrap mt-[1rem] xl:mt-[2rem]  justify-center'>
         <div className='w-full h-fit flex flex-col items-center text-center'>
           <h1 className='text-white text-[1.5rem]  md:text-[1.25rem] lg:text-[2rem] 2xl:text-[2.5rem] mb-[.5rem] font-zenDots'>Hello I&apos;m Trevor Danahy</h1>
           <h2 className='text-orangeDark italic text-[.75rem] lg:text-[1.25rem] 2xl:text-[1.75rem] font-zenDots mb-[.5rem]'>Fullstack Developer</h2>
           <h3 className='text-white text-[.5rem] lg:text-[1rem] font-zenDots'>Welcome to my Portfolio</h3>
         </div>
-        <div className='flex w-full xl:w-[30rem] 2xl:w-[37rem]  sm:w-fit rounded-lg bg-fadedOrange mt-[1rem] md:mt-[3rem] flex-wrap justify-center'>
+        <div className='flex w-full xl:w-[30rem] 2xl:w-[37rem]  sm:w-fit rounded-lg bg-fadedOrange hover:bg-orangeDark mt-[1rem] md:mt-[3rem] flex-wrap justify-center'>
             {skillsList}
         </div>
     </SectionMainColumn>

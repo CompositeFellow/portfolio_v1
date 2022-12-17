@@ -1,4 +1,4 @@
-export type skill = {
+export type Skill = {
     iconPath: string;
     altTxt: string;
     skill: string;
@@ -6,7 +6,7 @@ export type skill = {
   
   const assetStr = "/assets/skillIcons/";
   
-  export const skills: { [skillName: string]: skill } = {
+  export const skills: { [skillName: string]: Skill } = {
     typescript: {
       iconPath: assetStr + "tsLogo.png",
       altTxt: "Typescript Logo",
@@ -40,7 +40,7 @@ export type skill = {
   };
   
   const ObjOfObjsToArray = (obj: {}) => {
-    let arrayOfObjs: skill[] = [];
+    let arrayOfObjs: Skill[] = [];
     for (var key in obj) {
       arrayOfObjs.push(obj[key as keyof typeof obj]);
     }
