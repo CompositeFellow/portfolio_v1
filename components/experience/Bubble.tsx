@@ -15,7 +15,6 @@ const Bubble = ({ isLeft, ex }: BubbleProps) => {
 		);
 	});
 
-	console.log(isLeft);
 	return (
 		<div
 			className={`

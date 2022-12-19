@@ -40,9 +40,7 @@ export const workExperience: JobExperience[] = [
 		company: "G4 Precision",
 		jobTitle: "Machinist",
 		startEnd: "July 2019- Feb 2020",
-		details: [
-			"Prepared and operated CNC and lathe for part and prototype production.",
-		],
+		details: ["Prepared and operated CNC and lathe for part and prototype production."],
 	},
 	{
 		company: "Symbeo",
