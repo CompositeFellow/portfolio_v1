@@ -13,7 +13,7 @@ const Experience = (props: ExperienceProps) => {
 		return <Job key={experience.company + experience.jobTitle} ex={experience} isLeft={false} />;
 	});
 	return (
-		<SectionMainColumn id='experience' classname='flex flex-col items-center'>
+		<SectionMainColumn id='experience' classname='flex flex-col items-center scroll-mt-[2rem]'>
 			<h3 className='font-VT323 underline text-orangeDark text-[2rem] align-text-bottom'>
 				<b>Experience</b>
 			</h3>
