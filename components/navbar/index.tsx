@@ -15,7 +15,8 @@ type NavLinkProps = {
 const NavLink = ({ name, href }: NavLinkProps) => {
 	return (
 		<Link
-			className='text-orangeDark text-[.75rem] font-VT323 sm:text-[1.5rem] mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem]'
+			className='text-orangeDark text-[.75rem] font-VT323 sm:text-[1rem] 
+			mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem]'
 			href={href}
 		>
 			{name}
@@ -31,8 +32,9 @@ const Navbar = (props: NavbarProps) => {
 			<div className='hidden sm:block grow' />
 			<div className='hidden sm:block w-[32px]' />
 			<nav
-				className='bg-black h:-[.5rem] sm:h-full w-[100%] sm:w-[577px] md:w-[705px] lg:w-[961px] xl:w-[1217px] 2xl:w-[1473px] 
-        p-[.25rem] flex justify-between sm:justify-between'
+				className='bg-black h:-[.5rem] sm:h-full w-[100%] sm:w-[577px] md:w-[705px] lg:w-[961px] 
+				xl:w-[1217px] 2xl:w-[1473px] 
+        		p-[.25rem] flex justify-between sm:justify-between'
 			>
 				{isMobile ? (
 					<>

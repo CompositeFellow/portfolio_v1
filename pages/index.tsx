@@ -8,27 +8,26 @@ import MainColumn from "../components/global/MainColumn";
 import RAsiade from "../components/global/RAsiade";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar";
-import ProjectList from "../components/projects/ProjectList";
-
+import ProjectList from "../components/projects";
 
 export default function Home() {
-  return (
-    <div className="w-[100vw] h-full min-h-screen bg-black scroll-smooth">
-      <Head>
-        <title>Trevor Danahy</title>
-        <meta name="Trevor's Dev Portfolio" content="Dev Projects" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
-        <Navbar/>
-        <LAside />
-        <MainColumn>
-          <Hero />
-          <ProjectList />
-          <Experience />
-        </MainColumn>
-        <RAsiade />
-      </Layout>
-    </div>
-  );
+	return (
+		<div className="w-[100vw] h-full min-h-screen bg-black scroll-smooth">
+			<Head>
+				<title>Trevor Danahy</title>
+				<meta name="Trevor's Dev Portfolio" content="Dev Projects" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<Layout>
+				<Navbar />
+				<LAside />
+				<MainColumn>
+					<Hero />
+					<ProjectList />
+					<Experience />
+				</MainColumn>
+				<RAsiade />
+			</Layout>
+		</div>
+	);
 }
