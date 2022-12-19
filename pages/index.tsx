@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Experience from "../components/experience";
 import LAside from "../components/global/LAside";
 import Layout from "../components/global/Layout";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <MainColumn>
           <Hero />
           <ProjectList />
+          <Experience />
         </MainColumn>
         <RAsiade />
       </Layout>

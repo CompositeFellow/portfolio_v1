@@ -12,7 +12,7 @@ type SectionMainColumnProps = {
 
 const SectionMainColumn = ({children, id, classname}: SectionMainColumnProps) => {
   return (
-        <section id={id} className={`w-full mb-[2rem] ${classname}`} >
+        <section id={id} className={`w-full h-fit mb-[2rem] ${classname}`} >
             {children}
         </section>
     )
