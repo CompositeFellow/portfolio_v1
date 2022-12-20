@@ -1,5 +1,4 @@
-import { ECDH } from "crypto";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import React, { useEffect, useRef, useState } from "react";
 import { useFacePosition, useIsMobile, useMousePosition } from "../_hooks";
 import FaceLogo from "./FaceLogo";
@@ -9,18 +8,23 @@ type NavbarProps = {};
 
 type NavLinkProps = {
 	name: string;
-	href: string;
+	sectionID: string;
 };
 
-const NavLink = ({ name, href }: NavLinkProps) => {
+const NavLink = ({ name, sectionID }: NavLinkProps) => {
 	return (
-		<Link
-			className='text-orangeDark text-[.75rem] font-VT323 sm:text-[1rem] 
-			mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem]'
-			href={href}
-		>
-			{name}
-		</Link>
+		<button>
+			<Link
+				className='text-orangeDark text-[.75rem] font-VT323 sm:text-[1rem] 
+				mb-[.5rem] sm:mb-[.25rem] sm:ml-[1rem] hover:underline'
+				to={sectionID}
+				smooth={true}
+				duration={500}
+				offset={-64}
+			>
+				{name}
+			</Link>
+		</button>
 	);
 };
 
@@ -39,20 +43,20 @@ const Navbar = (props: NavbarProps) => {
 				{isMobile ? (
 					<>
 						<div className='grow flex justify-center items-center pt-[.5rem] ml-[-.5rem]'>
-							<NavLink href='/#experience' name='Experience' />
+							<NavLink sectionID='experience' name='Experience' />
 						</div>
 
 						<FaceLogo />
 						<div className='grow flex justify-center items-center pt-[.5rem]'>
-							<NavLink href='/#projects' name='Projects' />
+							<NavLink sectionID='projects' name='Projects' />
 						</div>
 					</>
 				) : (
 					<>
 						<FancyFaceLogo />
 						<div className='h-[2rem] pr-[.5rem] sm:pr-[1rem] flex items-end'>
-							<NavLink href='/#projects' name='Projects' />
-							<NavLink href='/#experience' name='Experience' />
+							<NavLink sectionID='projects' name='Projects' />
+							<NavLink sectionID='experience' name='Experience' />
 						</div>
 					</>
 				)}
