@@ -13,6 +13,7 @@ type NavLinkProps = {
 
 const NavLink = ({ name, sectionID }: NavLinkProps) => {
 	return (
+		// rome-ignore lint: button is fine, just need for cursor effect.
 		<button>
 			<Link
 				className='text-orangeDark text-[.75rem] font-VT323 sm:text-[1rem] 
